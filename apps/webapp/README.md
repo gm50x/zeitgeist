@@ -8,7 +8,7 @@
 From your terminal:
 
 ```sh
-npx nx dev front
+npx nx dev webapp
 ```
 
 This starts your app in development mode, rebuilding assets on file changes.
@@ -18,13 +18,13 @@ This starts your app in development mode, rebuilding assets on file changes.
 First, build your app for production:
 
 ```sh
-npx nx build front
+npx nx build webapp
 ```
 
 Then run the app in production mode:
 
 ```sh
-npx nx start front
+npx nx start webapp
 ```
 
 Now you'll need to pick a host to deploy it to.
@@ -35,8 +35,8 @@ If you're familiar with deploying node applications, the built-in Remix app serv
 
 Make sure to deploy the output of `remix build`
 
-- `packages/front/build/`
-- `packages/front/public/build/`
+- `packages/webapp/build/`
+- `packages/webapp/public/build/`
 
 ### Using a Template
 

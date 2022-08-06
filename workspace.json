@@ -3,6 +3,6 @@
   "version": 2,
   "projects": {
     "bff": "apps/bff",
-    "front": "apps/front"
+    "webapp": "apps/webapp"
   }
 }
