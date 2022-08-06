@@ -6,21 +6,21 @@ networks:
     driver: bridge
 
 volumes:
-  zeit_pg_data:
-    name: zeit_pg_data
+  zeit_postgres_data:
+    name: zeit_postgres_data
   zeit_redis_data:
     name: zeit_redis_data
 
 services:
-  zeit_pg:
+  zeit_postgres:
     image: postgres:alpine
     environment:
       POSTGRES_DB: ${POSTGRES_DB}
       POSTGRES_USER: ${POSTGRES_USER}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
     ports: [ 5432:5432 ]
-    volumes: [ zeit_pg_data:/var/lib/postgresql/data ]
-    container_name: zeit_pg
+    volumes: [ zeit_postgres_data:/var/lib/postgresql/data ]
+    container_name: zeit_postgres
     networks: [ zeit_net ]
   zeit_redis:
     image: redis:alpine

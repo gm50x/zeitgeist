@@ -3,6 +3,7 @@
   "version": 2,
   "projects": {
     "bff": "apps/bff",
+    "stickers": "apps/stickers",
     "webapp": "apps/webapp"
   }
 }
