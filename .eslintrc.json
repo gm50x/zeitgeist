@@ -15,6 +15,18 @@
               {
                 "sourceTag": "*",
                 "onlyDependOnLibsWithTags": ["*"]
+              },
+              {
+                "sourceTag": "scope:shared",
+                "onlyDependOnLibsWithTags": ["scope:shared"]
+              },
+              {
+                "sourceTag": "scope:remix",
+                "onlyDependOnLibsWithTags": ["scope:remix", "scope:shared"]
+              },
+              {
+                "sourceTag": "scope:nest",
+                "onlyDependOnLibsWithTags": ["scope:nest", "scope:shared"]
               }
             ]
           }
